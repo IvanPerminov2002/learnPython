@@ -26,6 +26,7 @@ else:
 """
 
 #инструкция while - цикл выполняется до тех пор пока выполняется указанное условие 
+#для выхода из бесконечного цикла можно оспользовать ctrl + c
 spam = 0
 while spam < 5:
     print('Hello, world.')
@@ -42,6 +43,75 @@ print('Thank you!')
 '''
 
 #continue
+'''когда программа достигает инструкции continue, управление немедленно передается в начало цикла, где
+условие вычисляется заново'''
+while True:
+    print('Who are you?')
+    name =  input()
+    if name != 'Joe':
+        continue
+    print('Hello, Joe. What is the password? (It is a fish.)')
+    password = input()
+    if password == 'swordfish':
+        break
+print('Access granted.')
+
+#for
+print('My name is')
+for i in range(5):
+    print('Jimmy Five Times (' + str(i) + ')')
+
+print('')
+total = 0;
+for num in range(101):
+    total = total + num
+print(total)
+
+print('')
+for i in range(12,16):# выведет 12 13 14 15
+    print(i)
 
 
+print('')
+for i in range(0, 10, 2):# выведет 0 2 4 6 8 можно range(5, -1, -1)
+    print(i)
+print('')
+#Импортирование модулей, набор модулей называется стандартной библиотекой
+import random
+for i in range(5):
+    print(random.randint(1, 10))
+print('')
+
+#randit возвращает случайное число в диапозоне
+
+
+
+#преждевременное прекращение выполнения программы 
+import sys
+
+while True:
+    print('Type exit to exit.')
+    response = input()
+    if response == 'exit':
+        sys.exit()
+    print('You typed ' + response + '.')
+
+
+
+
+
+
+#round() - округление
+#abs() - модуль
+#Задание 9. Написать программу, при вводе значения 1 - Hello, 2 -Howdy, при другом - Greetings
+
+
+print('Enter number:')
+spam = input()
+if spam == '1':
+    print('Hello')
+elif spam == '2':
+    print('Howdy')
+else:
+    print('Greetings')
 
