@@ -4,3 +4,5 @@
 lesson1  - функции print(); input(); int; float; str; len()
 
 lesson2 - if; elif; else; while; break; continue; for; range()
+
+lesson3 function; return; random.randint( , );
