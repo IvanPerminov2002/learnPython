@@ -1,3 +1,4 @@
+#date: 30.09.2022
 #Списки и кортежи
 #Список - это знаяение, которое представляет собой коллекцию значений, образующих упорядоченную последовательность [элемент списка]
 spam = ['cat', 'bat', 'rat', 'elephant']
@@ -29,6 +30,40 @@ print(spam)
 #Удаление значений с помощью инструкции del(), можно удалять и простые переменные
 del spam[2]
 print(spam)
+
+#date: 01.10.2022
+#Работа со списками 
+#allMyCats.py добовление элементов списка с помщью клавиатуры
+#for in list
+print()
+print('for  и список')
+supplines = ['pens', 'staplers', 'flame-throwers', 'binders']
+for i in range(len(supplines)):
+    print('Index ' + str(i) + ' in supplines is: ' + supplines[i])
+#in, not in
+#myPets.py
+
+#Груповое присваивание, число перменных должно совпадать с длиной списка
+print()
+cat = ['fat', 'black', 'loud']
+size, color, disposition = cat
+print(size, color, disposition)
+
+#Комбинированные операторы присваивания +-*/%
+spamm = 25
+print(spamm)
+spamm += 1
+print(spamm)
+#можно использовать комбинированные операторы присваивания для конкатенации и репликации строк
+print()
+spammm = 'Hello'
+spammm += ' world'
+print(spammm)
+bacon = ['Zophie']
+bacon *= 5
+print(bacon)
+
+#Методы
 
 
 
